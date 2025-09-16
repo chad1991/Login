@@ -1,1 +1,15 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Logout</title>
+</head>
+<body>
+  <script>
+    localStorage.removeItem("loggedIn");
+    alert("You have been logged out.");
+    window.location.href = "login.html";
+  </script>
+</body>
+</html>
