@@ -1,1 +1,22 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BenchFiles - Redirect or Login</title>
+  <script>
+    window.onload = function () {
+      const isLoggedIn = localStorage.getItem("loggedIn");
+      if (isLoggedIn === "true") {
+        window.location.href = "dashboard.html";
+      } else {
+        alert("You are not logged in. Redirecting to login page...");
+        window.location.href = "login.html";
+      }
+    };
+  </script>
+</head>
+<body>
+  <p>Checking login status...</p>
+</body>
+</html>
